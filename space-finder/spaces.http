@@ -1,0 +1,38 @@
+
+@url = https://79bt6fnsvg.execute-api.us-west-1.amazonaws.com/prod
+@token = eyJraWQiOiJ1NGY2eXNJUEF6bUhSeG16MFc4Y2hhTjRnWTlEdXBvT21pT3FqSm5pZFp3PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2OTY5NDlhZS1iMDExLTcwOWUtOWEyNC0wYWVlMzliNjdiNTUiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbnMiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMS5hbWF6b25hd3MuY29tXC91cy13ZXN0LTFfUWxrQnFhZ251IiwiY29nbml0bzp1c2VybmFtZSI6InRlc3QiLCJvcmlnaW5fanRpIjoiZmU4YWY1ZmQtYjU2NC00MjBlLTkwYWEtNTAxZDNkMWRhZjMwIiwiY29nbml0bzpyb2xlcyI6WyJhcm46YXdzOmlhbTo6ODQyNjExNzA0OTYwOnJvbGVcL0F1dGhTdGFjay1Db2duaXRvQWRtaW5Sb2xlNEMxMEZCQTQtNnJIWFpwNkNaWnZwIl0sImF1ZCI6IjJmaHU1Mm5nZGFzOHVzbDRwY3ZqY2Q2N2hkIiwiZXZlbnRfaWQiOiI5NTA3NGQ4ZS0wNGU5LTQyZTUtOGJkOC04ZWU2OTM3ZWJiNDIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTcyODA2MTk2OCwiZXhwIjoxNzI4MDY1NTY4LCJpYXQiOjE3MjgwNjE5NjgsImp0aSI6ImEyNzdjMTUxLTUzMTUtNDljOC1iY2E0LTU1YWFkMWI4ZDc0OCIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20ifQ.LlL-4Fd-xtyuPfOhYSlXlFKe-1Qq_G9TvifHfUZYc2EqGL_pmwL9tC0gbGbUtT7qe5B3MMIgV8KLaUmjYcHbATANdqKB4GqK5O37J3gQVsqk6rbMOyN7jdkSgmOzXRA8kFPLhNwRhNKmCuQ1lhJ94ue0aB46pFINQEOjO5tnoP3MA21NPEAfGdAvXFRZcIWK2PeaThgUuc84Fix2XqGCS9Yg2SSzia8JIYgHmFQI3Zf_7NSfb5picxs-HJG7JivXpt7nNdlHGMF08xYFcHlywgvDRP54alXM-tS7LEjsqzM4BnTfjlvYZ12qiJ9e0SX-4FUXH2ys_YqTQb0Bz9bcsg
+
+GET {{url}}/spaces
+Authorization:  {{token}}
+###
+
+
+POST https://79bt6fnsvg.execute-api.us-west-1.amazonaws.com/prod/spaces
+Authorization:  {{token}}
+Content-Type: application/json
+
+    {
+    "location": "Paris",
+    "name": "Paris Office"
+    }
+
+###
+
+GET https://79bt6fnsvg.execute-api.us-west-1.amazonaws.com/prod/spaces/?id=dd24d638-0dcd-484e-8a07-6fbe901e9b22
+
+###
+
+PUT https://79bt6fnsvg.execute-api.us-west-1.amazonaws.com/prod/spaces/?id=dd24d638-0dcd-484e-8a07-6fbe901e9b22
+Content-Type: application/json
+
+    {
+    "name": "Dublin Office updated"
+    }
+
+###
+
+DELETE https://79bt6fnsvg.execute-api.us-west-1.amazonaws.com/prod/spaces
+Authorization:  {{token}}
+
+
+

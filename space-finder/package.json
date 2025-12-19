@@ -1,0 +1,35 @@
+{
+  "name": "space-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cdk deploy --all --outputs-file outputs.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.5.5",
+    "aws-cdk": "^2.158.0",
+    "aws-cdk-lib": "^2.158.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.24.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@aws-amplify/auth": "^6.4.2",
+    "@aws-sdk/client-cognito-identity": "^3.662.0",
+    "@aws-sdk/client-dynamodb": "^3.658.1",
+    "@aws-sdk/client-s3": "^3.658.1",
+    "@aws-sdk/client-sns": "^3.663.0",
+    "@aws-sdk/credential-providers": "^3.662.0",
+    "@aws-sdk/lib-dynamodb": "^3.658.1",
+    "@aws-sdk/util-dynamodb": "^3.658.1",
+    "@types/uuid": "^10.0.0",
+    "aws-amplify": "^6.6.2",
+    "uuid": "^10.0.0"
+  }
+}
